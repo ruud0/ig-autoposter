@@ -37,10 +37,10 @@ cp .env.example .env
 ```
 
 Fill in your `.env`:
-- `IG_ACCESS_TOKEN` — your long-lived Instagram token
-- `IG_USER_ID` — your Instagram Business account user ID
-- `ANTHROPIC_API_KEY` — for caption generation
-- `NGROK_AUTH_TOKEN` — free account at [ngrok.com](https://ngrok.com) (needed to serve video to Instagram)
+- `IG_ACCESS_TOKEN`: your long-lived Instagram token
+- `IG_USER_ID`: your Instagram Business account user ID
+- `ANTHROPIC_API_KEY`: for caption generation
+- `NGROK_AUTH_TOKEN`: free account at [ngrok.com](https://ngrok.com) (needed to serve video to Instagram)
 
 ## Usage
 
@@ -81,7 +81,7 @@ python pipeline.py auto
 
 | File | Purpose |
 |------|---------|
-| `pipeline.py` | CLI orchestrator — ingest, post, auto, status |
+| `pipeline.py` | CLI orchestrator: ingest, post, auto, status |
 | `visuals.py` | FFmpeg waveform/spectrum video generator |
 | `captions.py` | Claude-powered caption + hashtag generator |
 | `poster.py` | Instagram Graph API publisher with ngrok tunneling |
